@@ -16,7 +16,7 @@ db.connect((error) => {
 app.get('/', (req, res) => {
   res.json('home page')
 })
-app.use('/book', booksRoutes)
+app.use('/books', booksRoutes)
 app.use('/user', userRoutes)
 
 app.listen(5000, () => {
